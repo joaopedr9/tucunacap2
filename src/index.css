@@ -1,0 +1,111 @@
+/* Importação da fonte (se houver) */
+
+/* Estilos gerais */
+body {
+  background-image: linear-gradient(90deg,  #9fc131,  #d6d58e); /* Fundo cinza claro */
+  margin: 0;
+  padding: 0;
+  color: #222; /* Cor de texto padrão */
+  font-size: 16px; /* Reduzindo um pouco o tamanho da fonte */
+  font-family: Arial, sans-serif; /* Fonte padrão da web */
+}
+
+/* Formulário */
+form {
+  max-width: 800px; /* Aumentando a largura máxima */
+  margin: 20px auto; 
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+  border-radius: 8px;
+}
+
+input[type="text"], input[type="email"], select {
+  width: calc(100% - 24px); /* Ajustando largura com espaço para padding */
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #000000; /* Borda */
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Botão */
+button {
+  background-color: rgb(0, 0, 0); 
+  color: #fff;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #258; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Títulos */
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0); /* Azul da Wikipedia para destaque */
+  margin-bottom: 20px;
+}
+
+/* Links */
+a {
+  color: #36c; /* Azul da Wikipedia para links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #258; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Navegação */
+nav {
+  padding: 10px 0;
+  border-radius: 5px;
+ 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: rgb(0, 0, 0); /* Azul da Wikipedia para fundo da navegação */
+padding: .9em;
+  margin: 0 10px; /* Menor margem entre itens */
+
+}
+
+nav ul li a {
+  color: #fff; /* Texto branco para links na navegação */
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #258; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+  
+  nav ul li {
+    margin: 0 8px; /* Ajustando margem menor */
+  }
+}
